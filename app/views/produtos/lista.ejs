@@ -3,7 +3,6 @@
 <head>
 
 	<title>Lista de produtos</title>
-	<link rel="stylesheet" href="styles/css/estilo.css" />
 
 </head>
 
@@ -16,11 +15,16 @@
 			<td>NOME</td>
 			<td>DESCRIÇÃO</td>
 		</tr>
-	 	<tr>
-			<td>#001</td>
-			<td>Livro de NodeJs</td>
-			<td>Os primeiros passos em node js</td>
-		</tr>
+
+	 	<%for(var i=0;i<lista.length;i++){%>
+	 		<tr>
+				<td><%=lista[i].ID%></td>
+				<td><%=lista[i].NOME%></td>
+				<td><%=lista[i].DESCRIÇÃO%></td>
+				<td><%=lista[i].VALOR%></td>
+			</tr>	
+	 	<%}%>
+	 	
 	</table>
 
 </body>
