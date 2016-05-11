@@ -7,8 +7,8 @@
 </head>
 
 <body>
-	<h1>Lista de Produtos</h1>
-
+	<h1>Lista</h1>
+	<a href="/produtos/form">formulário</a>
 	<table>
 		<tr>
 			<td>ID</td>
@@ -18,10 +18,10 @@
 		</tr>
 	 	<%for(var i=0; i<lista.length; i++) {%>
 	 		<tr>
-				<td><%=lista[i].ID%></td>
-				<td><%=lista[i].NOME%></td>
-				<td><%=lista[i].DESCRIÇÃO%></td>
-				<td><%=lista[i].VALOR%></td>
+				<td><%=lista[i].id%></td>
+				<td><%=lista[i].nome%></td>
+				<td><%=lista[i].descricao%></td>
+				<td><%=lista[i].valor%></td>
 			</tr>	
 	 	<%}%> 	
 	</table>
