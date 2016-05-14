@@ -37,6 +37,10 @@ table tbody tr:hover {
   background: rgba(255, 255, 0, 0.2);
 }
 
-input {
+label {
+  display: block;
+}
+
+input#id {
   display: block;
 }

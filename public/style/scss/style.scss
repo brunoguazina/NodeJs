@@ -46,6 +46,9 @@ table {
 	}
 }
 
-input {
+label {
+	display: block;
+}
+input#id {
 	display: block;
 }
